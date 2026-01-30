@@ -13,13 +13,26 @@ namespace ConsoleApp12
             Console.WriteLine("Note eingeben 1-6");
             string zahl = Console.ReadLine();
 
-            if (zahl == "1")
+            switch (zahl)
             {
-                Console.WriteLine("sehr gut)");
-            }
-            if (zahl == "2")
-            {
-                Console.WriteLine("gut)");
+                case "1":
+                    Console.WriteLine("sehr gut");
+                    break;
+                case "2":
+                    Console.WriteLine("gut");
+                    break;
+                case "3":
+                    Console.WriteLine("befriedigend");
+                    break;
+                case "4":
+                    Console.WriteLine("ausreichend");
+                    break;
+                case "5":
+                    Console.WriteLine("was soll der Mist");
+                    break;
+                case "6":
+                    Console.WriteLine("du musst mehr lernen");
+                    break;
             }
         }
     }
